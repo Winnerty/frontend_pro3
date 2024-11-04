@@ -15,8 +15,8 @@ export const actionButton = (icon, className, onClick) => {
 	deleteImg.style.pointerEvents = "none"
 	buttonElement.appendChild(deleteImg)
 
-	buttonElement.addEventListener("click", () => {
-		onClick()
+	buttonElement.addEventListener("click", (e) => {
+		onClick(e)
 	})
 
 	return buttonElement
