@@ -16,6 +16,7 @@ export const modalComp = () => {
 
 	const modalHeader = document.createElement("header")
 	const modalTitle = document.createElement("h2")
+	modalTitle.classList.add("modal-title")
 	modalTitle.innerText = "Title test"
 
 	const closeBtn = document.createElement("button")
@@ -28,7 +29,7 @@ export const modalComp = () => {
 
 	const modalContainer = document.createElement("div")
 	modalContainer.classList.add("modal-container")
-	modalContainer.innerText = "el test du content"
+	modalContainer.innerText = "el test111 du content"
 
 	modalHeader.appendChild(closeBtn)
 	modalHeader.appendChild(modalTitle)

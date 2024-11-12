@@ -3,6 +3,10 @@ import "./style.css"
 import { handleData } from "./utils/handleData"
 import { modalComp } from "./components/modalComp"
 
-const usersArray = await fetchUsers()
-if (usersArray.length) handleData(usersArray)
-app.appendChild(modalComp())
+export async function init() {
+    const usersArray = await fetchUsers()
+    if (usersArray.length) handleData(usersArray)
+    app.appendChild(modalComp())
+}
+
+init()
